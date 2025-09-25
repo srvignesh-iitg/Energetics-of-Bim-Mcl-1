@@ -1,0 +1,21 @@
+
+#include "charmm.ff/forcefield.itp"
+
+#include "pmx_topol_Protein_chain_A.itp"
+#include "pmx_topol_Protein_chain_B.itp"
+#include "./charmm.ff/tip3p.itp"
+
+#ifdef POSRES_WATER
+[ position_restraints ]
+1    1       1000       1000       1000
+#endif
+#include "./charmm.ff/ions.itp"
+
+[ system ]
+PMX MODEL
+
+[ molecules ]
+Protein_chain_A 1
+Protein_chain_B 1
+SOL	    12700
+CL		3

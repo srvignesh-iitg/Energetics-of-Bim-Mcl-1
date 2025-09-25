@@ -1,0 +1,107 @@
+[ F2X ] ; PHE -> NLE
+
+ [ morphes ]
+     N        NH1 ->      N      NH1
+    HN          H ->     HN        H
+    CA        CT1 ->     CA      CT1
+    HA        HB1 ->     HA      HB1
+    CB        CT2 ->     CB      CT2
+   HB1        HA2 ->    HB1      HA2
+   HB2        HA2 ->    HB2      HA2
+    CG         CA -> CG.gone  DUM_CA
+   CD1         CA -> CD1.gone DUM_CA
+   HD1         HP -> HD1.gone DUM_HP
+   CE1         CA -> CE1.gone DUM_CA
+   HE1         HP -> HE1.gone DUM_HP   
+    CZ         CA -> CZ.gone  DUM_CA
+    HZ         HP -> HZ.gone  DUM_HP
+   CD2         CA -> CD2.gone DUM_CA
+   HD2         HP -> HD2.gone DUM_HP
+   CE2         CA -> CE2.gone DUM_CA
+   HE2         HP -> HE2.gone DUM_HP
+     C          C ->      C        C
+     O          O ->      O        O
+   DCG    DUM_CT2 ->     CG      CT2   
+   HV1    DUM_HA2 ->    HG1      HA2   
+   HV2    DUM_HA2 ->    HG2      HA2   
+   DCD    DUM_CT2 ->     CD      CT2  
+   HV3    DUM_HA2 ->    HD1      HA2
+   HV4    DUM_HA2 ->    HD2      HA2        
+   DCE    DUM_CT3 ->     CE      CT3   
+   HV5    DUM_HA3 ->    HE1      HA3   
+   HV6    DUM_HA3 ->    HE2      HA3     
+   HV7    DUM_HA3 ->    HE3      HA3        
+   
+ [ atoms ]      
+       N        NH1  -0.470000      1  14.007000        NH1  -0.470000  14.007000   ;  types == | charge == 
+      HN          H   0.310000      1   1.008000          H   0.310000   1.008000   ;  types == | charge == 
+      CA        CT1   0.070000      1  12.011000        CT1   0.070000  12.011000   ;  types == | charge == 
+      HA        HB1   0.090000      1   1.008000        HB1   0.090000   1.008000   ;  types == | charge == 
+      CB        CT2  -0.180000      1  12.011000        CT2  -0.180000  12.011000   ;  types == | charge == 
+     HB1        HA2   0.090000      1   1.008000        HA2   0.090000   1.008000   ;  types == | charge == 
+     HB2        HA2   0.090000      1   1.008000        HA2   0.090000   1.008000   ;  types == | charge == 
+      CG         CA   0.000000      1  12.011000     DUM_CA   0.000000  12.011000   ;  types != | charge == 
+     CD1         CA  -0.115000      1  12.011000     DUM_CA   0.000000  12.011000   ;  types != | charge != 
+     HD1         HP   0.115000      1   1.008000     DUM_HP   0.000000   1.008000   ;  types != | charge != 
+     CE1         CA  -0.115000      1  12.011000     DUM_CA   0.000000  12.011000   ;  types != | charge != 
+     HE1         HP   0.115000      1   1.008000     DUM_HP   0.000000   1.008000   ;  types != | charge != 
+      CZ         CA  -0.115000      1  12.011000     DUM_CA   0.000000  12.011000   ;  types != | charge != 
+      HZ         HP   0.115000      1   1.008000     DUM_HP   0.000000   1.008000   ;  types != | charge !=
+     CD2         CA  -0.115000      1  12.011000     DUM_CA   0.000000  12.011000   ;  types != | charge != 
+     HD2         HP   0.115000      1   1.008000     DUM_HP   0.000000   1.008000   ;  types != | charge != 
+     CE2         CA  -0.115000      1  12.011000     DUM_CA   0.000000  12.011000   ;  types != | charge != 
+     HE2         HP   0.115000      1   1.008000     DUM_HP   0.000000   1.008000   ;  types != | charge != 
+       C          C   0.510000      1  12.011000          C   0.510000  12.011000   ;  types == | charge ==
+       O          O  -0.510000      1  15.999400          O  -0.510000  15.999400   ;  types == | charge ==
+     DCG    DUM_CT2   0.000000      1  12.011000        CT2  -0.180000  12.011000   ;  types != | charge != 
+     HV1    DUM_HA2   0.000000      1   1.008000        HA2   0.090000   1.008000   ;  types != | charge != 
+     HV2    DUM_HA2   0.000000      1   1.008000        HA2   0.090000   1.008000   ;  types != | charge != 
+     DCD    DUM_CT2   0.000000      1  12.011000        CT2  -0.180000  12.011000   ;  types != | charge != 
+     HV3    DUM_HA2   0.000000      1   1.008000        HA2   0.090000   1.008000   ;  types != | charge != 
+     HV4    DUM_HA2   0.000000      1   1.008000        HA2   0.090000   1.008000   ;  types != | charge != 
+     DCE    DUM_CT3   0.000000      1  12.011000        CT3  -0.270000  12.011000   ;  types != | charge !=
+     HV5    DUM_HA3   0.000000      1   1.008000        HA3   0.090000   1.008000   ;  types != | charge != 
+     HV6    DUM_HA3   0.000000      1   1.008000        HA3   0.090000   1.008000   ;  types != | charge != 
+     HV7    DUM_HA3   0.000000      1   1.008000        HA3   0.090000   1.008000   ;  types != | charge != 
+
+ [ coords ]
+   0.631  -2.091  -0.879
+   1.170  -3.024  -0.805
+   1.316  -0.803  -0.920
+   1.078  -0.301  -1.877
+   0.858   0.085   0.276
+   1.195  -0.372   1.229
+   1.402   1.050   0.247
+  -0.647   0.381   0.372
+  -1.510  -0.099  -0.619
+  -1.123  -0.690  -1.438
+  -2.862   0.227  -0.590
+  -3.514  -0.123  -1.377
+  -3.362   1.021   0.439
+  -4.411   1.278   0.456
+  -1.156   1.176   1.402
+  -0.497   1.563   2.167
+  -2.511   1.493   1.436
+  -2.898   2.114   2.230
+   2.814  -0.984  -0.848
+   3.346  -2.126  -0.763
+  -0.817   0.218   0.464
+  -1.015   1.283   0.705
+  -1.191  -0.447   1.243
+  -1.515  -0.101  -0.866
+  -1.378  -1.160  -1.154
+  -1.130   0.517  -1.700
+  -3.034   0.139  -0.787
+  -3.337   0.206   0.258
+  -3.558  -0.688  -1.266
+  -3.281   1.070  -1.298
+        
+ [ impropers ]
+      N     -C     CA     HN     default-A                 default-B                  
+      C     CA     +N      O     default-A                 default-B                 
+           
+ [ dihedrals ]
+
+ [ rotations ]
+  CA-CB HB1 HB2 CG CD1 HD1 CD2 HD2 CE1 HE1 CE2 HE2 CZ HZ DCG HV1 HV2 DCD HV3 HV4 DCE HV5 HV6 HV7
+  CB-CG CD1 HD1 CD2 HD2 CE1 HE1 CE2 HE2 CZ HZ  

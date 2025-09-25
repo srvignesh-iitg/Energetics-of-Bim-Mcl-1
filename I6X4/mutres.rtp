@@ -1,0 +1,89 @@
+[ bondedtypes ]
+; Col 1: Type of bond
+; Col 2: Type of angles
+; Col 3: Type of proper dihedrals
+; Col 4: Type of improper dihedrals
+; Col 5: Generate all dihedrals if 1, only heavy atoms of 0.
+; Col 6: Number of excluded neighbors for nonbonded interactions
+; Col 7: Generate 1,4 interactions between pairs of hydrogens if 1
+; Col 8: Remove impropers over the same bond as a proper if it is 1
+; bonds  angles  dihedrals  impropers all_dihedrals nrexcl HH14 RemoveDih
+     1       5          9          2        1         3      1     0
+
+[ I2X ] ; ILE -> CBZ
+
+ [ atoms ]
+            N   NH1 	   	 -0.4700 1
+           HN   H  		  0.3100 2
+           CA   CT1  		  0.0700 3
+           HA   HB1 		  0.0900 4
+           CB   CT1 		 -0.0900 5
+           HB   HA1 		  0.0900 6
+          CG2   CT3 		 -0.2700 7
+         HG21   HA3 		  0.0900 8
+         HG22   HA3  		  0.0900 9
+         HG23   HA3  		  0.0900 10
+          CG1   CT2 		 -0.1800 11
+         HG11   HA2 		  0.0900 12
+         HG12   HA2 		  0.0900 13
+          CD1   CT3 		 -0.2700 14
+         HD11   HA3  		  0.0900 15
+         HD12   HA3 		  0.0900 16
+         HD13   HA3 		  0.0900 17
+            C   C  		  0.5100 18
+            O   O 		 -0.5100 19
+          HV1   DUM_HGA2          0.0000 20         
+          DCG   DUM_CG3C51        0.0000 21         
+          HV2   DUM_HGA1          0.0000 22           
+         DCD1   DUM_CG3C52        0.0000 23         
+          HV3   DUM_HGA2          0.0000 24         
+          HV4   DUM_HGA2          0.0000 25            
+         DCD2   DUM_CG3C52        0.0000 26            
+          HV5   DUM_HGA2          0.0000 27                
+          HV6   DUM_HGA2          0.0000 28            
+          DCE   DUM_CG3C52        0.0000 29
+          HV7   DUM_HGA2          0.0000 30 
+          HV8   DUM_HGA2          0.0000 31                    
+
+ [ bonds ]
+     N      HN ; (     N      HN)
+     N      CA ; (     N      CA)
+    CA      CB ; (    CA      CB)
+    CA       C ; (    CA       C)
+    CA      HA ; (    CA      HA)
+    CB     CG1 ; (    CB     CG1.gone)
+    CB     CG2 ; (    CB     CG2.gone)
+    CB      HB ; (    CB     HB1)
+    CB     HV1 ; (    CB     HB2)
+   CG2    HG21 ; (CG2.gone  HG2.gone1)
+   CG2    HG22 ; (CG2.gone  HG2.gone2)
+   CG2    HG23 ; (CG2.gone  HG2.gone3)
+   CG1     CD1 ; (CG1.gone   CD1.gone)
+   CG1    HG11 ; (CG1.gone  HG1.gone1)
+   CG1    HG12 ; (CG1.gone  HG1.gone2)
+   CD1    HD11 ; (CD1.gone  HD1.gone1)
+   CD1    HD12 ; (CD1.gone  HD1.gone2)
+   CD1    HD13 ; (CD1.gone  HD1.gone3)
+    CB     DCG ; (    CB      CG)
+   DCG     HV2 ; (    CG      HG)
+   DCG    DCD1 ; (    CG     CD1) 
+   DCG    DCD2 ; (    CG     CD2) 
+  DCD1     HV3 ; (   CD1    HD11) 
+  DCD1     HV4 ; (   CD1    HD12)  
+  DCD1     DCE ; (   CD1      CE)
+  DCD2     HV5 ; (   CD2    HD21) 
+  DCD2     HV6 ; (   CD2    HD22)  
+  DCD2     DCE ; (   CD2      CE)  
+   DCE     HV7 ; (    CE     HE1) 
+   DCE     HV8 ; (    CE     HE2)   
+     C       O ; (     C       O)
+     C      +N  
+
+ [ impropers ]
+     N      -C      CA      HN 
+     C      CA      +N       O 
+
+ [ dihedrals ]
+
+ [ cmap ]
+-C     N    CA     C    +N  

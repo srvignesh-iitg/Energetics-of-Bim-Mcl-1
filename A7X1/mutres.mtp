@@ -1,0 +1,58 @@
+[ A2X ] ; ALA -> ABA
+
+ [ morphes ]
+     N        NH1 ->      N        NH1
+    HN          H ->     HN          H  		
+    CA        CT1 ->     CA        CT1 
+    HA        HB1 ->     HA        HB1 		    		
+    CB        CT3 ->     CB      CG321 		 
+   HB1        HA3 ->    HB1       HGA2  		 
+   HB2        HA3 ->    HB2       HGA2 		
+   HB3        HA3 -> HB3.gone  DUM_HA3 		
+     C          C ->      C          C   		  
+     O          O ->      O          O   		 
+   DCG  DUM_CG331 ->     CG      CG331 		 
+   HV1   DUM_HGA3 ->    HG1       HGA3
+   HV2   DUM_HGA3 ->    HG2       HGA3 		  
+   HV3   DUM_HGA3 ->    HG3       HGA3 	
+   
+ [ atoms ]      
+       N        NH1  -0.470000      1  14.007000        NH1  -0.470000  14.007000   ;  types == | charge == 
+      HN          H   0.310000      1   1.008000          H   0.310000   1.008000   ;  types == | charge == 
+      CA        CT1   0.070000      1  12.011000        CT1   0.070000  12.011000   ;  types == | charge == 
+      HA        HB1   0.090000      1   1.008000        HB1   0.090000   1.008000   ;  types == | charge == 
+      CB        CT3  -0.270000      1  12.011000      CG321  -0.180000  12.011000   ;  types != | charge !=
+     HB1        HA3   0.090000      1   1.008000       HGA2   0.090000   1.008000   ;  types != | charge ==
+     HB2        HA3   0.090000      1   1.008000       HGA2   0.090000   1.008000   ;  types != | charge ==
+     HB3        HA3   0.090000      1   1.008000    DUM_HA3   0.000000   1.008000   ;  types != | charge != 
+       C          C   0.510000      1  12.011000          C   0.510000  12.011000   ;  types == | charge ==
+       O          O  -0.510000      1  15.999400          O  -0.510000  15.999400   ;  types == | charge ==
+     DCG  DUM_CG331   0.000000      1  12.011000      CG331  -0.270000  12.011000   ;  types != | charge != 
+     HV1   DUM_HGA3   0.000000      1   1.008000       HGA3   0.090000   1.008000   ;  types != | charge != 
+     HV2   DUM_HGA3   0.000000      1   1.008000       HGA3   0.090000   1.008000   ;  types != | charge != 
+     HV3   DUM_HGA3   0.000000      1   1.008000       HGA3   0.090000   1.008000   ;  types != | charge != 
+
+ [ coords ]
+   0.642  -2.011  -0.760
+   1.192  -2.937  -0.677
+   1.311  -0.727  -0.952
+   0.991  -0.303  -1.922
+   0.865   0.207   0.187
+   1.142  -0.189   1.183
+   1.318   1.210   0.098
+  -0.232   0.353   0.192
+   2.809  -0.903  -1.012
+   3.344  -2.014  -0.917
+  -0.645   0.327   0.262
+  -1.059  -0.636   0.562
+  -1.035   0.600  -0.719
+  -0.929   1.087   0.990
+        
+ [ impropers ]
+      N     -C     CA     HN     default-A                 default-B                  
+      C     CA     +N      O     default-A                 default-B   
+                     
+ [ dihedrals ]
+
+ [ rotations ] 
+  CA-CB HB1 HB2 HB3 DCG HV1 HV2 HV3 

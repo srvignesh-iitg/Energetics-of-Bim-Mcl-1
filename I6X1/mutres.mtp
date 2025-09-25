@@ -1,0 +1,82 @@
+[ I2X ] ; ILE -> ABA
+
+ [ morphes ]
+     N        NH1 ->      N        NH1
+    HN          H ->     HN          H
+    CA        CT1 ->     CA        CT1
+    HA        HB1 ->     HA        HB1
+    CB        CT1 ->     CB      CG321 
+    HB        HA1 ->    HB1       HGA2
+   CG2        CT3 -> CG2.gone  DUM_CT3
+  HG21        HA3 -> HG2.gone1 DUM_HA3
+  HG22        HA3 -> HG2.gone2 DUM_HA3
+  HG23        HA3 -> HG2.gone3 DUM_HA3
+   CG1        CT2 ->     CG      CG331
+  HG11        HA2 -> 	HG1 	  HGA3
+  HG12        HA2 -> 	HG2       HGA3
+   CD1        CT3 -> CD1.gone  DUM_CT3
+  HD11        HA3 -> HD1.gone1 DUM_HA3
+  HD12        HA3 -> HD1.gone2 DUM_HA3
+  HD13        HA3 -> HD1.gone3 DUM_HA3		
+     C          C ->      C          C   		  
+     O          O ->      O          O   		 
+   HV1   DUM_HGA2 ->    HB2	  HGA2   
+   HV2   DUM_HGA3 ->    HG3       HGA3
+   
+ [ atoms ]      
+       N        NH1  -0.470000      1  14.007000        NH1  -0.470000  14.007000   ;  types == | charge == 
+      HN          H   0.310000      1   1.008000          H   0.310000   1.008000   ;  types == | charge == 
+      CA        CT1   0.070000      1  12.011000        CT1   0.070000  12.011000   ;  types == | charge == 
+      HA        HB1   0.090000      1   1.008000        HB1   0.090000   1.008000   ;  types == | charge == 
+      CB        CT1  -0.090000      1  12.011000      CG321  -0.180000  12.011000   ;  types != | charge !=
+      HB        HA1   0.090000      1   1.008000       HGA2   0.090000   1.008000   ;  types != | charge == 
+     CG2        CT3  -0.270000      1  12.011000    DUM_CT3   0.000000  12.011000   ;  types != | charge != 
+    HG21        HA3   0.090000      1   1.008000    DUM_HA3   0.000000   1.008000   ;  types != | charge != 
+    HG22        HA3   0.090000      1   1.008000    DUM_HA3   0.000000   1.008000   ;  types != | charge != 
+    HG23        HA3   0.090000      1   1.008000    DUM_HA3   0.000000   1.008000   ;  types != | charge != 
+     CG1        CT2  -0.180000      1  12.011000      CG331  -0.270000  12.011000   ;  types != | charge != 
+    HG11        HA2   0.090000      1   1.008000       HGA3   0.090000   1.008000   ;  types != | charge == 
+    HG12        HA2   0.090000      1   1.008000       HGA3   0.090000   1.008000   ;  types != | charge == 
+     CD1        CT3  -0.270000      1  12.011000    DUM_CT3   0.000000  12.011000   ;  types != | charge != 
+    HD11        HA3   0.090000      1   1.008000    DUM_HA3   0.000000   1.008000   ;  types != | charge != 
+    HD12        HA3   0.090000      1   1.008000    DUM_HA3   0.000000   1.008000   ;  types != | charge != 
+    HD13        HA3   0.090000      1   1.008000    DUM_HA3   0.000000   1.008000   ;  types != | charge != 
+       C          C   0.510000      1  12.011000          C   0.510000  12.011000   ;  types == | charge == 
+       O          O  -0.510000      1  15.999400          O  -0.510000  15.999400   ;  types == | charge == 
+     HV1   DUM_HGA2   0.000000      1   1.008000       HGA2   0.090000   1.008000   ;  types != | charge !=
+     HV2   DUM_HGA3   0.000000      1   1.008000       HGA3   0.090000   1.008000   ;  types != | charge != 
+
+ [ coords ]
+   0.643  -2.034  -0.784
+   1.199  -2.958  -0.727
+   1.304  -0.741  -0.938
+   0.993  -0.321  -1.913
+   0.869   0.269   0.200
+   1.256  -0.144   1.156
+   1.486   1.690   0.018
+   2.590   1.687   0.005
+   1.148   2.174  -0.919
+   1.223   2.373   0.846
+  -0.676   0.429   0.373
+  -1.152  -0.569   0.392
+  -1.112   0.926  -0.515
+  -1.138   1.141   1.662
+  -0.814   2.196   1.703
+  -2.241   1.147   1.741
+  -0.751   0.640   2.569
+   2.803  -0.903  -1.001
+   3.347  -2.015  -0.926
+   1.361   1.193   0.006
+  -0.929   1.087   0.990
+        
+ [ impropers ]
+      N     -C     CA     HN     default-A                 default-B                  
+      C     CA     +N      O     default-A                 default-B   
+                     
+ [ dihedrals ]
+
+ [ rotations ]
+  CA-CB HB CG1 HG11 HG12 CG2 HG21 HG22 HG23 CD1 HD11 HD12 HD13 HV1 HV2
+  CB-CG1 HG11 HG12 CD1 HD11 HD12 HD13 HV2
+  CG1-CD1 HD11 HD12 HD13
+  CB-CG2 HG21 HG22 HG23 HD11 HD12 HD13 
