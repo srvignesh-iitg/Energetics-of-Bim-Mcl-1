@@ -1,6 +1,6 @@
 # Energetics-of-Bim-Mcl-1
 
-# Supporting Data for Alchemical Simulations
+## Supporting Data for Alchemical Simulations
 
 This repository contains supporting data associated with the paper’s alchemical simulations.
 
